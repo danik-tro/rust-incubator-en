@@ -104,8 +104,8 @@ fn mem_replace_without_box() {
 }
 
 fn mem_replace_with_pin() {
-    let mut user = User::new("Daniel", "Tro", 21);
-    let mut anonim = User::new("", "", 33);
+    let user = User::new("Daniel", "Tro", 21);
+    let anonim = User::new("", "", 33);
 
     println!("{:?}", user);
     println!("User pointer {:p}", &user);
